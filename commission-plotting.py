@@ -17,26 +17,20 @@ def plot():
     officeb1ylist = []
     officeb2ylist = []
     officecylist = []
-
-    # Office A
+   
     for s in range(0, 15):
         xlist.append(s)
+        # Office A
         result = maths(basicrate = 25, higherrate = 60, cutoff = 5, sales = s)
         officeaylist.append(result)
-
-    # Office B, Higher: £50
-    for s in range(0, 15):
+        # Office B, Higher: £50    
         result = maths(basicrate = 25, higherrate = 50, cutoff = 7, sales = s)
         officeb1ylist.append(result)
-
-    # Office B, Higher: £60
-    for s in range(0, 15):
+        # Office B, Higher: £60    
         result = maths(basicrate = 25, higherrate = 60, cutoff = 7, sales = s)
         officeb2ylist.append(result)
-
-    # Office C, Higher: £100
-    for s in range(0, 15):
-        result = maths(basicrate=25, higherrate=100, cutoff=9, sales=s)
+        # Office C, Higher: £100    
+        result = maths(basicrate = 25, higherrate = 100, cutoff = 9, sales = s)
         officecylist.append(result)
 
     trace0 = go.Scatter(
